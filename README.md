@@ -1,2 +1,3 @@
-# adnama-nosilla
-Lil' personal website
+https://adnama-nosilla.com
+
+A little webpage for learning Go and GCP.
