@@ -4,18 +4,16 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
-	"time"
 )
 
 // Welcome holds information that we'll display in our HTML file
 type Welcome struct {
 	Name string
-	Time string
 }
 
 func main() {
 	// We'll get the name of the user as a query param from the URL
-	welcome := Welcome{"Anon", time.Now().Format(time.Stamp)}
+	welcome := Welcome{"Anon"}
 
 	// Using Must here, which will handle any errors and halt on fatals
 	templates := template.Must(template.ParseFiles("templates/welcome-template.html"))
